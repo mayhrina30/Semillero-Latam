@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+
+#root { 
+  max-width: 368px; 
+  margin: 0 auto; 
+  text-align: center;  
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(../fonts/Nunito-VariableFont_wght.ttf) format('woff2');
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(../fonts/static/Nunito-LightItalic.ttf) format('woff2');
+  font-weight: 400; 
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(../fonts/static/Nunito-Bold.ttf) format('woff2');
+  font-weight: 700; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(../fonts/static/Nunito-ExtraBold.ttf) format('woff2');
+  font-weight: 900; 
+  font-style: normal;
+}
+
+
+.App {
+  max-width: 368px; 
+  font-family: 'Nunito', sans-serif; 
+  position: relative;
+  z-index: 1000;
+}
+@media (max-height: 520px) {
+  body {
+    font-size: 14px;
+  }
+}
+.zIndexUp {
+  z-index: 101;
+}

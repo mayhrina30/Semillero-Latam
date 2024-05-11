@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Novedades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"
+    />
+</head>
+<body>
+<main>
+    <header style="
+          display: flex;
+          flex-direction: column;
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: #4e169d;
+          justify-content: center;
+          padding-bottom: 15px;
+          margin-inline: 8px;
+          height: 160px;
+        "
+    >
+        <div style="width: 100%">
+            <button
+                    style="
+              background-color: transparent;
+              border-color: transparent;
+              border-radius: 15px;
+              text-align: center;
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 0;
+              margin: auto;
+            "
+            >
+                <a
+                        href="http://localhost:5173/"
+                        style="
+                text-decoration: none;
+                font-size: 25px;
+                color: #fff;
+                font-family: Nunito;
+                padding-inline: 25px;
+              "
+                ><img src="https://res.cloudinary.com/dmb8sscjm/image/upload/v1712257310/gxc628jjkfgrncr0thc0.png"
+                        alt="Logo ecos"
+                        height="100px"
+                        width="100px"
+                />
+                    <h1 style="
+                  text-align: center;
+                  font-family: Nunito, Bold;
+                  font-size: 60px;
+                  margin: 0;
+                  color: #000;
+                "
+                    >
+                        EcoSistema
+                    </h1></a
+                >
+            </button>
+        </div>
+    </header>
+    <section style="margin-inline: 5px">
+        <h2 style="text-align: center; font-size: 25px; font-family: Nunito, Bold"
+        >
+            <strong>Nuevos Productos/Servicios Añadidos</strong>
+        </h2>
+        <p style="font-size: 18px; font-family: Nunito; padding: 15px">
+            Te mostramos algunos de los nuevos Productos/Servicios añadidos
+            recientemente
+        </p>
+    </section>
+    <section style="
+          background-color: #d2d2d2;
+          border-radius: 15px;
+          padding: 10px;
+          margin: 10px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        "
+            th:each="provider, provider.images : ${providers}"
+    >
+        <div style="
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            min-width: 250px;
+            background-color: #fff;
+          "
+        >
+            <img src="https://res.cloudinary.com/dmb8sscjm/image/upload/v1714071892/i5ajyr5faxwayvcjugbe.png"
+                    alt="Imagen del producto/Servicio"
+                    style="
+              height: 100%;
+              width: 100%;
+              display: block;
+              overflow: hidden;
+              object-fit: cover;
+              border-radius: 10px;
+            "
+            />
+        </div>
+        <section style="padding-inline: 10px">
+            <h1 style="
+              font-family: Nunito;
+              font-size: 35px;
+              margin: 0;
+              padding-left: 15px;
+            "
+                    th:text="${provider.name}"
+            ></h1>
+            <h2 style="
+              font-family: Nunito;
+              font-size: 25px;
+              margin: 0;
+              padding-left: 15px;
+            " th:text='${provider.country.name + ", " + provider.province.name}'
+            ></h2>
+            <p style="font-family: Nunito; font-size: 20px; padding-left: 15px"
+                    th:text="${provider.description}"
+            ></p>
+        </section>
+    </section>
+    <div align="center">
+        <button style="
+            background-color: #4e169d;
+            padding: 15px;
+            border-color: transparent;
+            border-radius: 15px;
+            text-align: center;
+          "
+        >
+            <a href="http://localhost:5173/"
+               style="
+              text-decoration: none;
+              font-size: 25px;
+              color: #fff;
+              font-family: Nunito;
+              padding-inline: 25px;
+            "
+            >Ver más</a
+            >
+        </button>
+    </div>
+</main>
+
+<footer></footer>
+</body>
+</html>
