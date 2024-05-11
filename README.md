@@ -1,5 +1,6 @@
-Ecosistema - Directorio de impacto
-Configuraciones Generales
+<h1>Ecosistema - Directorio de impacto</h1>
+
+<h3>Configuraciones Generales
 Requisitos Previos
 JDK (Java Development Kit) versión 17.x o superior.
 Maven versión 3.9.x o superior.
@@ -20,7 +21,7 @@ Ejemplo (para Windows):
 
 M2_HOME=C:\Program Files\Apache\maven PATH=%M2_HOME%\bin;%PATH%
 
-Variables de entorno
+Variables de entorno</h3>
 Para facilitar la configuración del proyecto y garantizar que cada desarrollador tenga una configuración consistente, se establece la práctica de utilizar un archivo de variables de entorno. Este archivo se crea a partir de un archivo de ejemplo llamado .env.example.
 
 Crear el Archivo .env a partir del .env.example:
