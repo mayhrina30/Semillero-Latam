@@ -21,12 +21,14 @@ Ejemplo (para Windows):
 
 M2_HOME=C:\Program Files\Apache\maven PATH=%M2_HOME%\bin;%PATH%
 
-Variables de entorno</h3>
+Variables de entorno
 Para facilitar la configuración del proyecto y garantizar que cada desarrollador tenga una configuración consistente, se establece la práctica de utilizar un archivo de variables de entorno. Este archivo se crea a partir de un archivo de ejemplo llamado .env.example.
 
 Crear el Archivo .env a partir del .env.example:
 Una vez creado el archivo .env, es importante revisar y modificar cada variable de entorno según sea necesario.
-El archivo .env ya está ignorado en el .gitignore
+El archivo .env ya está ignorado en el .gitignore</H3>
+
+<h2>PARTE DEL CODIGO DEL BACK</h2>
 
 ![Logo de mi proyecto](backCountry.png)
 
