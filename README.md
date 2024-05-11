@@ -27,3 +27,6 @@ Para facilitar la configuración del proyecto y garantizar que cada desarrollado
 Crear el Archivo .env a partir del .env.example:
 Una vez creado el archivo .env, es importante revisar y modificar cada variable de entorno según sea necesario.
 El archivo .env ya está ignorado en el .gitignore
+
+![Logo de mi proyecto](https://raw.githubusercontent.com/tuusuario/turepositorio/main/nombre_de_tu_imagen.png)
+
